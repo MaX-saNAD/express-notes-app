@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+    <link rel="stylesheet" href="/style/style.css" />
+  </head>
+  <body>
+    <form action="/edit/form/<%= note.id %>" method="post">
+      <label for="title">title</label>
+      <input type="text" name="title" id="title" value="<%=note.title%>" />
+      <label for="body">note content</label>
+      <textarea id="body" name="body" rows="10" cols="50">
+<%= note.body %></textarea
+      >
+          <button type="submit" >Edit</button>
+    </form>
+  </body>
+</html>

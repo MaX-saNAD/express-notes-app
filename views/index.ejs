@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Max note app</h1>
+        <div class="flex-box">
+            <% notes.forEach(ele => { %>
+                <div class="note">
+                    <h2><%= ele.title %></h2>
+                    <p><%= ele.body %></p>
+                    <div class="btns">
+                        <form action="/delete/<%= ele.id %>" method="POST">
+                            <button>Delete</button>
+                        </form> 
+                         <a href="/note/<%= ele.id %>" class="send-btn">Show</a>
+                                      
+                    </div>
+                </div>
+            <% }); %>
+            <a href="/add" class="add">add</a>
+            </div>  
+    </div>
+</body>
+</html>
