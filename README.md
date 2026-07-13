@@ -26,23 +26,28 @@ A simple and robust Notes Web Application built using Node.js, Express, and EJS.
 │   └── formEDIT.ejs       # Form to edit an existing note
 ├── index.js               # Main server and entry point file
 └── package.json           # Dependencies and scripts
+```
 
+## ⚙️ Installation & Setup
 
-⚙️ Installation & Setup
 Clone the repository:
-
-Bash
+```bash
 git clone <your-repository-url>
 cd <your-project-directory>
-Install dependencies:
+```
 
-Bash
+Install dependencies:
+```bash
 npm install
+```
+
 Run the server:
 
-Bash
+```bash
 node index.js
+```
+
 Now, open your browser and go to: http://localhost:3000
 
-👨‍💻 Author
+## 👨‍💻 Author
 Max Sanad 
