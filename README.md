@@ -1,4 +1,4 @@
-# Noteify - Notes Web Application
+# Notes Web Application
 
 A simple and robust Notes Web Application built using Node.js, Express, and EJS. The application uses a local JSON file for data storage and handles missing file errors automatically.
 
@@ -17,7 +17,7 @@ A simple and robust Notes Web Application built using Node.js, Express, and EJS.
 ├── data/
 │   └── notes.json         # Local database (auto-generated if missing)
 ├── public/
-│   └── css/
+│   └── style/
 │       └── style.css      # Stylesheet for custom styling
 ├── views/
 │   ├── index.ejs          # Home page displaying all notes
@@ -32,11 +32,12 @@ A simple and robust Notes Web Application built using Node.js, Express, and EJS.
 
 Clone the repository:
 ```bash
-git clone <your-repository-url>
-cd <your-project-directory>
+git clone https://github.com/MaX-saNAD/express-notes-app
+cd express-notes-app
 ```
 
 Install dependencies:
+
 ```bash
 npm install
 ```
