@@ -7,28 +7,32 @@
     <link rel="stylesheet" href="/style/style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="form">
+    <div class="form">
+      <div class="container">
         <form action="/add" method="post">
-          <div class="flex">
-            <div class="left">
-              <label for="title">title</label>
-              <input type="text" name="title" id="title" required />
-            </div>
+          <input
+            type="text"
+            name="title"
+            id="title"
+            class="acting-h1"
+            placeholder="Title"
+            required
+          />
 
-            <div class="right">
-              <label for="body">note content</label>
-              <textarea
-                id="body"
-                name="body"
-                rows="10"
-                cols="50"
-                placeholder="Start typing your note here..."
-                required
-              ></textarea>
-            </div>
+          <textarea
+            id="body"
+            name="body"
+            rows="10"
+            cols="50"
+            placeholder="Start typing your note here..."
+            required
+            class="acting-p"
+          ></textarea>
+          <div class="btns">
+            <button type="submit" class="send-btn">Add</button>
+                      <a href="/" class="send-btn">Return</a>
+
           </div>
-          <button type="submit">Add</button>
         </form>
       </div>
     </div>

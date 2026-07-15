@@ -7,14 +7,25 @@
     <link rel="stylesheet" href="/style/style.css" />
   </head>
   <body>
-    <form action="/edit/form/<%= note.id %>" method="post">
-      <label for="title">title</label>
-      <input type="text" name="title" id="title" value="<%=note.title%>" />
-      <label for="body">note content</label>
-      <textarea id="body" name="body" rows="10" cols="50">
-<%= note.body %></textarea
-      >
-          <button type="submit" >Edit</button>
-    </form>
+    <div class="form">
+      <div class="container">
+        <form action="/edit/form/<%= note.id %>" method="post">
+          <input
+            type="text"
+            name="title"
+            id="title"
+            class="acting-h1"
+            value="<%=note.title%>"
+          />
+          <textarea id="body" name="body" rows="10" cols="50" class="acting-p">
+    <%= note.body %></textarea
+          >
+          <div class="btns">
+            <a href="/note/<%= note.id %>" class="send-btn">Return</a>
+            <button type="submit" class="send-btn">Edit</button>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

@@ -30,6 +30,7 @@ const port = 3000
 app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 app.set('view engine', 'ejs')
+
 // ================ The Main Route ================
 app.get('/', async (req, res) => {
   const notes = await readFile()
